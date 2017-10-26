@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>RoutingApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./node_modules/angular/angular.js"></script>
+  <script src="./node_modules/angular-route/angular-route.js"></script>
+</head>
+<body ng-app="myApp">
+  <a href="#/!">Home</a>
+  <a href="#!page2">page 2</a>
+  <a href="#!page3">page 3</a>
+  <mainContent></mainContent> 
+  
+  <div ng-view>
+    <mainContent></mainContent> 
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
